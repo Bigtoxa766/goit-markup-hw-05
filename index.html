@@ -57,7 +57,7 @@
         <section class="section section-hero">
           <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-btn">Замовити послугу</button>
+            <button type="button" class="hero-btn" data-modal>Замовити послугу</button>
           </div>
         </section>
       <section class="section section-advantage">
@@ -122,13 +122,13 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work">
             <li class="work-list">
-              <a class="work-link" href=""><img src="./images/img1.jpg" alt="Робота за комп'ютером" width="370" height="294" /></a>
+              <img src="./images/img1.jpg" alt="Робота за комп'ютером" width="370" height="294" />
             </li>
             <li class="work-list">
-              <a class="work-link" href=""><img src="./images/img2.jpg" alt="Робота на смартфоні" width="370" height="294" /></a>
+              <img src="./images/img2.jpg" alt="Робота на смартфоні" width="370" height="294" />
             </li>
             <li class="work-list">
-              <a class="work-link" href=""><img src="./images/img3.jpg" alt="Робота на планшеті" width="370" height="294" /></a>
+              <img src="./images/img3.jpg" alt="Робота на планшеті" width="370" height="294" />
             </li>
           </ul>
         </div>
@@ -378,7 +378,7 @@
               <a class="link footer-link" href="" target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="instagram">
-                    <svg class="footer-icon" width="20px" height="20px">
+                    <svg class="footer-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -387,7 +387,7 @@
               <a class="link footer-link" href="" target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="twitter">
-                    <svg class="footer-icon" width="20px" height="20px">
+                    <svg class="footer-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
@@ -396,7 +396,7 @@
               <a class="link footer-link" href="" target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="facebook">
-                    <svg class="footer-icon" width="20px" height="20px">
+                    <svg class="footer-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
@@ -405,7 +405,7 @@
               <a class="link footer-link" href="" target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="linkedin">
-                    <svg class="footer-icon" width="20px" height="20px">
+                    <svg class="footer-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -414,5 +414,16 @@
         </div>
       </div>
     </footer>
+    <!-- Modal Window -->
+    <div class="backdrop " data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
